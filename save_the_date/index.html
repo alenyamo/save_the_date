@@ -63,24 +63,29 @@
                $(".first").hide();
   $(".second").hide();
   $(".third").hide();
-        if (document.readyState === 'complete') {
+
+  document.onreadystatechange = function () {
+  if (document.readyState === 'interactive') {
+
  
-
-  setTimeout( function(){ 
-    $(".first").addClass(" animate__animated animate__jackInTheBox ");
-    $(".first").show();
-
-  }  , 18000 );
-
-  setTimeout( function(){ 
-  $(".second").addClass(" animate__animated animate__tada ");
-  $(".second").show();
-  }  , 20000 );
-
-  setTimeout( function(){ 
-  $(".third").show();
-  }  , 22000 );
+ console.log("hi");
+   setTimeout( function(){ 
+     $(".first").addClass(" animate__animated animate__jackInTheBox ");
+     $(".first").show();
+ 
+   }  , 18000 );
+ 
+   setTimeout( function(){ 
+   $(".second").addClass(" animate__animated animate__tada ");
+   $(".second").show();
+   }  , 20000 );
+ 
+   setTimeout( function(){ 
+   $(".third").show();
+   }  , 22000 );
+ }
 }
+
   
     </script>
 </body>
