@@ -40,15 +40,26 @@ p {
 }
 
 body {
-    background-image: url(img/ftipng.com-Shrek-Shrek-And-Fiona-shrek.png);
+    background-image: url(img/ftipng.png);
     background-repeat: repeat;
     background-size: 300px 300px;
  
     background-color: #5c452d;
     color: white;
     text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+
   
 }
+
+@media screen and (max-width: 576px) {
+    body{
+
+        background-size: 400px 400px;
+    }
+ 
+ }
+
+
 .container {
     background-color: #8cb04eF2;
     margin: 0 auto;
