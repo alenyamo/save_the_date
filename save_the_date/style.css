@@ -1,0 +1,97 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Pacifico&family=Patrick+Hand&display=swap');
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 600;
+    text-align: center;
+    font-size: 6rem;
+}
+
+@media screen and (max-width: 576px) {
+    h1,h2,h3,h4,h5,h6 {
+        font-size: 3rem;
+    }
+    p, ol, ul {
+        font-size: 2.5rem !important;
+    }
+}
+.special-font {
+    font-family: 'Pacifico', cursive;
+}
+
+.special-comic-sans {
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+}
+
+.surprise {
+    color: transparent;
+    line-height: 1px;
+    opacity: 0;
+}
+
+hr {
+    width: 100%;
+}
+
+p {
+    font-family: 'Patrick Hand', cursive;
+    font-size: 4rem;
+    text-align: center;
+}
+
+body {
+    background-image: url(img/ftipng.com-Shrek-Shrek-And-Fiona-shrek.png);
+    background-repeat: repeat;
+    background-size: 300px 300px;
+ 
+    background-color: #5c452d;
+    color: white;
+    text-shadow: -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 2px 2px 0 #000;
+  
+}
+.container {
+    background-color: #8cb04eF2;
+    margin: 0 auto;
+    max-width: 1200px;
+    margin-bottom: 200px !important;
+}
+
+.row {
+    width: 100%;
+
+}
+iframe {
+    width:100% !important;
+    height: 100% !important;
+    padding-bottom: 50px;
+}
+.video {
+    width:100% !important;
+    height: 100% !important;
+    position: absolute;
+    border: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+p span:before {
+    animation: dots 2s linear infinite;
+    content: '';
+  }
+
+  @keyframes dots {
+    0%, 20% {
+      content: '.';
+    }
+    40% {
+      content: '..';
+    }
+    60% {
+      content: '...';
+    }
+    90%, 100% {
+      content: '';
+    }
+}
